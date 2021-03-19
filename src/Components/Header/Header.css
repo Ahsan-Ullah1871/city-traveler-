@@ -1,0 +1,18 @@
+.navPart a {
+	text-align: center;
+	margin: 0 10px;
+	text-decoration: none;
+	width: 100px;
+	height: 50px;
+	background-color: #b6664b;
+	padding: 10px;
+	border-radius: 5px;
+	color: bisque;
+}
+
+.navPart a:hover {
+	text-decoration: none;
+	background-color: #b6664b00;
+	border: 2px solid #b6664b;
+	color: coral;
+}

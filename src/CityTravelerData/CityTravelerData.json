@@ -1,0 +1,125 @@
+[
+{
+"name": "Bike",
+ 
+"photo": "https://images.unsplash.com/photo-1470945780341-171b6da56841?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+ 
+"backPhoto":"https://images.unsplash.com/photo-1558981001-792f6c0d5068?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+"categories": {
+"category1": {
+    "name": "Bike",
+    "sits":"2",
+    "rent": 2000
+},
+"category2": {
+    "name": "Bike",
+    "sits":"3",
+    "rent": 3000
+},
+"category3": {
+    "name": "Bike",
+    "sits":"4",
+    "rent": 4000
+},
+"category4": {
+    "name": "Bike",
+    "sits":"5",
+    "rent": 5000
+}
+ 
+}
+ 
+},
+{
+"name": "Car",
+ 
+"photo": "https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+"backPhoto": "https://images.unsplash.com/photo-1483093650862-b9ef3bdd9b33?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+ 
+"categories": {
+"category1": {
+    "name": "Car",
+    "sits":"2",
+    "rent": 2000
+},
+"category2": {
+    "name": "Car",
+    "sits":"3",
+    "rent": 3000
+},
+"category3": {
+    "name": "Car",
+    "sits":"4",
+    "rent": 4000
+},
+"category4": {
+    "name": "Car",
+    "sits":"5",
+    "rent": 5000
+}
+ 
+}
+ 
+},
+{
+"name": "Bus",
+ 
+"photo": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+ "backPhoto":"https://images.unsplash.com/photo-1547886597-7e87e5288619?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
+"categories": {
+"category1": {
+    "name": "Bus",
+    "sits":"2",
+    "rent": 2000
+},
+"category2": {
+    "name": "Bus",
+    "sits":"3",
+    "rent": 3000
+},
+"category3": {
+    "name": "Bus",
+    "sits":"4",
+    "rent": 4000
+},
+"category4": {
+    "name": "Bus",
+    "sits":"5",
+    "rent": 5000
+}
+ 
+}
+ 
+},
+{
+"name": "Train",
+ 
+"photo": "https://images.unsplash.com/photo-1576745515893-3042060c8d83?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+ 
+"backPhoto":"https://images.unsplash.com/photo-1557719554-e644d681eeb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+"categories": {
+"category1": {
+    "name": "Bus",
+    "sits":"2",
+    "rent": 2000
+},
+"category2": {
+    "name": "Train",
+    "sits":"3",
+    "rent": 3000
+},
+"category3": {
+    "name": "Train",
+    "sits":"4",
+    "rent": 4000
+},
+"category4": {
+    "name": "Train",
+    "sits":"5",
+    "rent": 5000
+}
+ 
+}
+ 
+}
+]
