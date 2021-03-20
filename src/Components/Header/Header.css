@@ -1,8 +1,9 @@
-.navPart a {
+.navPart a,
+.navPart button {
 	text-align: center;
-	margin: 0 10px;
+	margin: 10px 10px;
 	text-decoration: none;
-	width: 100px;
+	width: 110px;
 	height: 50px;
 	background-color: #b6664b;
 	padding: 10px;
@@ -10,9 +11,32 @@
 	color: bisque;
 }
 
-.navPart a:hover {
+.navPart a:hover,
+.navPart button:hover {
 	text-decoration: none;
 	background-color: #b6664b00;
 	border: 2px solid #b6664b;
 	color: coral;
+}
+
+.profileCard {
+	background-color: burlywood;
+	text-align: center;
+	width: 400px;
+	padding: 20px;
+	border-radius: 30px;
+	position: absolute;
+	top: 70px;
+	right: 0;
+	display: none;
+	z-index: 1;
+}
+.profilePhoto img {
+	width: 150px;
+	border-radius: 100px;
+	padding: 10px;
+}
+
+.closeButton {
+	margin-bottom: 10px;
 }

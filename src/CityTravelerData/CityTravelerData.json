@@ -5,29 +5,31 @@
 "photo": "https://images.unsplash.com/photo-1470945780341-171b6da56841?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
  
 "backPhoto":"https://images.unsplash.com/photo-1558981001-792f6c0d5068?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-"categories": {
-"category1": {
+"avatar":"https://lh3.googleusercontent.com/qoWSkUVXCr5d_Xq63P22_1Q5nqpYvD0QszscoCOdHN4FP3XvzL7XVVe5l5Ph_MOLkyQ85V98JIc2IuKrm5bn4VTLBxicMKijyLnXz9d0nCJVcT6bfc48NcNLQcMus_tBPraUUwZVks0nMVMzwboSBXoJADIk_tbJ_u1kGmry_Bxtm0fswHEEaF0NzP2m1Wnkyan_jIegiz-AkOvYK2QjAZp6N81JKP4mWWnduDkXwD5NNH1npUqWbnRYHvIKUwR5JkobAgRmvtQnkewZGO6CIpdCXdChQHj9GkGiFcIQ7VJ3qPTE7gHaUK2edNRGGE2IgxtUsoM7FNRmolfM5idotClqMAXgGZcZf3PIdI419L9PkXj6Erjxi5jgx4Vje0ak0tGK6kiWegLf-3E3mv89-pcVMQ-nEei90uuqdumeRh8BxagT3zhh_pYihDn7KS6QXd6izQUIc-chh4GHaffLa9pRgpZhKnEzyLYuvSolWYFLwwQ_l1rcvqmofFqpJQVwOuO-1dd9eQ6fxboBIoMuGlfv7nWkl8Ay2MmM3GP9cV7hLXPSAgXXQ5Q-kh9VlgF_0cpzqZjh77CC6pTSlhaV1ei4kAbvlpSYzckTYfG2-i22rxHOpA0nZNdL1ezCovozF6AuncDEOAdUtTF1SuheB6YW4JaBNTKOwP3quRzyynW2FMVNGZwhFelZilaIK8UFrc7aGEnas42Tqa1UN8P8yU8=s568-no?authuser=0",
+"categories": [
+    {
     "name": "Bike",
     "sits":"2",
     "rent": 2000
-},
-"category2": {
-    "name": "Bike",
+    },
+    {
+   "name": "Bike",
     "sits":"3",
     "rent": 3000
-},
-"category3": {
+    },
+    {
     "name": "Bike",
     "sits":"4",
     "rent": 4000
-},
-"category4": {
-    "name": "Bike",
+    },
+    {
+         "name": "Bike",
     "sits":"5",
     "rent": 5000
-}
+    }
+]
+
  
-}
  
 },
 {
@@ -35,60 +37,58 @@
  
 "photo": "https://images.unsplash.com/photo-1504215680853-026ed2a45def?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
 "backPhoto": "https://images.unsplash.com/photo-1483093650862-b9ef3bdd9b33?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
- 
-"categories": {
-"category1": {
+"avatar":"https://lh3.googleusercontent.com/_AY9Mf56RLk6BGbVup4kZSrtGWiJhQfKTa1VrPpL0ZBmYbrwQIbiY3f56bdl24HMCHxv4utGEPCUpM0P9nqbGkA4Yc4xqY0AdRuNrLrBQ-zvtiEm0DuLtwHIma8vK-FQwp3015D9O9prFyf3S9mr1T7dSZEc-2oPBUASAkfPNYgBFSqT17wfrp0hz2N4Wb35rOUiLJo4MxJxT_9mTqV0b_3TimAfGA7Qaa-P36rYXZS6_5H1fHsAm8-tQYdBAdZeqQZBSj1o2DS91_dkI_03MKfdrFWLJNLnmADavinpf9zjYW4bIX0zOShNaiD9cztFRtvsM8BFYqK8yMAKibpd2nkonCL408R_kAGUEedxlqFcihzjGNlTCTXQ0TFqB9_R3uZGPIEe1La8WuFfPl7ocjOCpTO9Ha8MJTDmBiXXGF2umZz2Dte566fyEyLKzHaeybq7AkiOeJTieioItZc94uPBajj-SyoeuYr2PMOfHCOYvwvqvaq75inyuGjh3ZX5wp39qFNd5XcgExRIaFPa4jFkTuMa2WcA6flfGrk5aauxy6WudqU39gjVVy16TqH7HFtfvhZSne9dfXK1O8F32ec3iYhjUrlKeOve0Z1HpZoycKLnyYeu2PnHchgH2ojzOJ6Hxft6BdvAelnAHW6wlOFh588w3spGWXEHwhF2Diwx6BUz3txyx0_mpvMUaLVUlfWv3L4k0McA5sQhmzl5iBk=s568-no?authuser=0",
+"categories": [
+    {
     "name": "Car",
     "sits":"2",
     "rent": 2000
-},
-"category2": {
-    "name": "Car",
+    },
+    {
+   "name": "Car",
     "sits":"3",
     "rent": 3000
-},
-"category3": {
+    },
+    {
     "name": "Car",
     "sits":"4",
     "rent": 4000
-},
-"category4": {
-    "name": "Car",
+    },
+    {
+         "name": "Car",
     "sits":"5",
     "rent": 5000
-}
- 
-}
- 
+    }
+]
 },
 {
 "name": "Bus",
  
 "photo": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
  "backPhoto":"https://images.unsplash.com/photo-1547886597-7e87e5288619?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80",
-"categories": {
-"category1": {
+ "avatar":"https://lh3.googleusercontent.com/KM8qlflyO-wjaQhC5B40JW4mrL-6eK5X5uiQRt1HdAZmSxGFhldMd6iRl5cbF11ZzxQotb5YF_LIlKcJXoh5Ve_HnK8NxiwJK5OGXQKOEUNRKkaBgoCKuMyjXD1vYcMjkX7mKlCc3nfT0vXA2PX0v51NPwcO0GuSBeM8mirSv45yGA2nUdYxTNI0vrk_FarjZ9eJCgZ_2W1X-UhLDRFk8G8jZPWtTpwnNf5AgHncb240KOx-jBCMQaKqonOvTYhjifLt_mB0fsBixYwrdt1ZDFLxK01tlaGdULnf-SCfuiyH6UU2h8Iv6afm0VVbkyq-oj_VyBt1lndSsnpR7ziNoG5EVrPHUD4o605Io78ImoxHdNOzGpTbt4R0bRxLk1x-KzdXJcEWzlDLuGvW3wRd2z0A6R0n-mMHYqUV664Gx3Ogb-bDqvR8VIwuZs5_8TPMGPXPVzZ5Yz3ND6zv53FytpK_pC_VMaf2SxH79Ge50OVcqFgZpUEoMY1jlofrTyjR6lIpzWDga-ch8TKSWSn35ZfMfDaJeQ0MpNo1KKBYo9-wrXfMsz2fCs9dJnb8h5E1okG-SsVk16SpyZe3ZrdL3qK_CU-bBa0fdsJBg-rMSKiSd4SrNYLDVO9FC3QNE4YHz3UEhKAqIj4dxowmCgv-NbEGP7D8okPmiGce440CUGHg4SqnlOmnBVaLzi9McLm0XpkdryWOmI7A-VTaXeBpGdU=s568-no?authuser=0",
+"categories": [
+    {
     "name": "Bus",
     "sits":"2",
     "rent": 2000
-},
-"category2": {
-    "name": "Bus",
+    },
+    {
+   "name": "Bus",
     "sits":"3",
     "rent": 3000
-},
-"category3": {
+    },
+    {
     "name": "Bus",
     "sits":"4",
     "rent": 4000
-},
-"category4": {
-    "name": "Bus",
+    },
+    {
+         "name": "Bus",
     "sits":"5",
     "rent": 5000
-}
- 
-}
+    }
+]
  
 },
 {
@@ -97,29 +97,29 @@
 "photo": "https://images.unsplash.com/photo-1576745515893-3042060c8d83?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
  
 "backPhoto":"https://images.unsplash.com/photo-1557719554-e644d681eeb8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
-"categories": {
-"category1": {
-    "name": "Bus",
+"avatar":"https://lh3.googleusercontent.com/j8vC-C_vQzY6f1Yd6rn18KRpyMNySHkRvc0skDdkE13t6fQ7StdTApWJlf1DAfCOpk2ygA0udwEfbYkANu56qsmiO_yImczD8iaGbpSYI7sePA4O2wDslLOeKPnulKumX8s6nIxk378pd1QE09hhNo6JIUndRFtDTsLiC8E9b2gTqBeuTotwJN-KNAdRqso4_J6NxnsQpqvCT44nxp3eWNBbuGxysVw32ZwQUrdnhanwIZYX5_UphQ_l8KxhDS825sEgF7jSPdheZlodRH7lkwxlPAAX1raKsEolU_gdU3fdvzbcZkuCXJKgdvByVyl_671YHU9jrUmE__EdDnn1MNxa6Q_CDuu_olaKWv1TwDgPULvU2zbYmjVmwB-tnE3vHQ8xLe0mR3bal-dHEwzG4JMLqTQlo6MRG4-oBrCissjB_ZkA439pYqCWVJQhGFiUUi9yCR9uP6GweeGTX4Lwk1xMQD6SatuyVhui3ImydOSmwuNM975PDmbcnsdnbnCMUExjSPgA1wzjV_5er3FseWo2TN-rBfxZQf0vMMDgXK2DxtVtEKYH3lzpLLsGWpVbcbbbbfPfiRxpe9EN6Hrea6E5woy3ib2lmbfAm0FU4T4jKXc5YE8xpMz_3rFFHx8HIOlRrnyGTQsmppeenxd3MyvWF-WCiHoPkBVohZ1lFekaYIFjOSpOva4sN_Bv7RMyQf6wEj53LAXj8WAoXB8NeFM=w804-h568-no?authuser=0",
+"categories": [
+    {
+    "name": "Train",
     "sits":"2",
     "rent": 2000
-},
-"category2": {
-    "name": "Train",
+    },
+    {
+   "name": "Train",
     "sits":"3",
     "rent": 3000
-},
-"category3": {
+    },
+    {
     "name": "Train",
     "sits":"4",
     "rent": 4000
-},
-"category4": {
-    "name": "Train",
+    },
+    {
+         "name": "Train",
     "sits":"5",
     "rent": 5000
-}
- 
-}
+    }
+]
  
 }
 ]

@@ -1,4 +1,4 @@
-input[type="text"],
+.searchForm input[type="text"],
 select {
 	width: 80%;
 	padding: 5px 2 px;
@@ -8,7 +8,7 @@ select {
 	border-radius: 4px;
 	box-sizing: border-box;
 }
-input[type="submit"] {
+.searchForm input[type="submit"] {
 	width: 30%;
 	background-color: #4caf50;
 	color: white;

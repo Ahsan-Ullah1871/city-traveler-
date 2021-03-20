@@ -1,0 +1,26 @@
+.categories {
+	background-color: bisque;
+	color: rgb(255, 239, 224);
+	padding: 20px;
+	border-radius: 10px;
+	width: 60%;
+}
+.option {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: coral;
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 5px;
+	box-shadow: 10px 10px 10px rgb(53, 52, 52);
+}
+.option img {
+	width: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+	.categories {
+		width: 80%;
+	}
+}

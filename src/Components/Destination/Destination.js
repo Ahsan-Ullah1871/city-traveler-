@@ -11,6 +11,7 @@ import DestinationSearchResult from "../DestinationSearchResult/DestinationSearc
 const Destination = () => {
 	const { name } = useParams();
 	const [selectedVehicle, setSelectedVehicle] = useState({});
+	const [showSearchResult, setShowSearchResult] = useState(false);
 	useEffect(() => {
 		const findSelectedVehicle = CityTravelerData.find(
 			(selected) => selected.name === `${name}`
@@ -18,31 +19,38 @@ const Destination = () => {
 		setSelectedVehicle(findSelectedVehicle);
 	}, [name]);
 
+	const { register, errors, handleSubmit } = useForm();
+	const SearchClick = (data) => {
+		setShowSearchResult(true);
+		const searchResult = data;
+		const selectedVehicleData = { ...selectedVehicle, searchResult };
+		setSelectedVehicle(selectedVehicleData);
+	};
+
 	const destinationStyle = {
-		height: "700px",
+		minHeight: "700px",
 		backgroundImage: `url(${selectedVehicle?.backPhoto})`,
 		backgroundSize: "cover",
 		color: "red",
 		backgroundPosition: "center",
 	};
-	const { register, errors, handleSubmit } = useForm();
-	const SearchClick = (data) => {
-		const searchResult = data;
-		const selectedVehicleData = { ...selectedVehicle, searchResult };
-		setSelectedVehicle(selectedVehicleData);
-	};
-	console.log(selectedVehicle);
 
 	return (
 		<div style={destinationStyle}>
 			<Header></Header>
 			<Container>
-				<Row>
-					<Col>
-						<h3>
-							Aythachi {selectedVehicle.name}
+				<Row className="align-items-md-center">
+					<Col sm={12} md={6} className="mb-5">
+						{showSearchResult ? (
+							<DestinationSearchResult
+								selectedVehicle={
+									selectedVehicle
+								}
+							></DestinationSearchResult>
+						) : (
 							<form
 								action=""
+								className="searchForm"
 								onSubmit={handleSubmit(
 									SearchClick
 								)}
@@ -71,14 +79,9 @@ const Destination = () => {
 									value="Search"
 								/>
 							</form>
-							<DestinationSearchResult
-								selectedVehicle={
-									selectedVehicle
-								}
-							></DestinationSearchResult>
-						</h3>
+						)}
 					</Col>
-					<Col className="mapPart">
+					<Col sm={12} md={6} className="mapPart">
 						<img src={map} alt="" />
 					</Col>
 				</Row>

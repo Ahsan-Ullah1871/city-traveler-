@@ -11,15 +11,13 @@ const HomeCard = ({ traveler }) => {
 
 	return (
 		<div className="homeCardPart">
-			<Card style={{ border: "none" }}>
+			<Card
+				style={{ border: "none", cursor: "pointer" }}
+				onClick={() => selectVehicle(traveler.name)}
+			>
 				<Card.Img variant="top" src={traveler.photo} />
 				<Card.Body className="">
-					<Button
-						variant="info"
-						onClick={() =>
-							selectVehicle(traveler.name)
-						}
-					>
+					<Button variant="info">
 						{traveler.name}
 					</Button>
 				</Card.Body>

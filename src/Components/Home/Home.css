@@ -1,13 +1,14 @@
 .homePart {
-	min-height: 700px;
+	min-height: 900px;
 	background-image: url(../../Images/Background.jpg);
 	background-position: center;
 	background-size: cover;
 }
 
 .homeCard {
-	height: 700px;
 	display: flex;
+	margin-top: 150px;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }

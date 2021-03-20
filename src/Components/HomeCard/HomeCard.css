@@ -1,5 +1,5 @@
 .homeCardPart {
-	display: inline-block;
+	display: block;
 	padding: 5px;
 	border-radius: 10px;
 	text-align: center;
@@ -11,5 +11,9 @@ card {
 .homeCardPart img {
 	width: 200px;
 	height: 200px;
-	paddings: 10px;
+	padding: 10px;
+}
+.homeCardPart button {
+	width: 100px;
+	text-align: center;
 }
