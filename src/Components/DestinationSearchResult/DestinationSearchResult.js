@@ -14,7 +14,6 @@ import "react-vertical-timeline-component/style.min.css";
 
 const DestinationSearchResult = ({ selectedVehicle }) => {
 	const { name, categories, avatar } = selectedVehicle;
-	console.log(selectedVehicle);
 	return (
 		<div>
 			<div className="searchPlace">

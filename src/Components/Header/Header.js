@@ -13,7 +13,9 @@ import {
 
 const Header = () => {
 	const [LoggedInUser, setLoggedInUser] = useContext(LoggedInUserContext);
-	const { displayName, email, photoURL } = LoggedInUser;
+	const name = LoggedInUser?.displayName;
+	const email = LoggedInUser?.email;
+	const photo = LoggedInUser?.photoURL;
 	initializeFramework();
 
 	// Profile Open: https:
@@ -48,18 +50,18 @@ const Header = () => {
 							</Link>
 							<Link>Blog</Link>
 							<Link>Contact</Link>
-							{email && email ? (
+							{email === undefined ? (
+								<Link to="/login">
+									Log in
+								</Link>
+							) : (
 								<button
 									onClick={
 										profileOpen
 									}
 								>
-									{displayName}
+									Profile
 								</button>
-							) : (
-								<Link to="/login">
-									Log in
-								</Link>
 							)}
 						</Nav>
 
@@ -81,11 +83,17 @@ const Header = () => {
 							</Button>
 							<div className="profilePhoto">
 								<img
-									src={photoURL}
+									src={photo}
 									alt=""
 								/>
 							</div>
 							<div className="info">
+								<h4>
+									Name:
+									{
+										LoggedInUser?.displayName
+									}
+								</h4>
 								<h4>Email: {email}</h4>
 							</div>
 							<Button

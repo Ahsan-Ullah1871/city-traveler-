@@ -3,6 +3,13 @@
 	padding: 20px;
 	font-family: "Patrick Hand", cursive;
 }
+.socialHeaderText {
+	background-color: rgb(241, 223, 200);
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 10px;
+}
 .socialButton h2 {
 	font-family: "Rock Salt", cursive;
 

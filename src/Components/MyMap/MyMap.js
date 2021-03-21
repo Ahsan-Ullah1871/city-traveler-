@@ -11,15 +11,6 @@ const MyMap = () => {
 		lat: 25.74486,
 		lng: 89.275589,
 	};
-	const onClick = () => {
-		console.info("I have been clicked!");
-	};
-
-	const divStyle = {
-		background: "white",
-		border: "1px solid #ccc",
-		padding: 15,
-	};
 
 	return (
 		<div>
@@ -27,7 +18,7 @@ const MyMap = () => {
 				<GoogleMap
 					id="overlay-view-example"
 					mapContainerStyle={mapStyles}
-					zoom={19}
+					zoom={13}
 					center={defaultCenter}
 				/>
 			</LoadScript>

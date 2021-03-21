@@ -62,7 +62,6 @@ const updateName = (name) => {
 	})
 		.then(function () {
 			// Update successful.
-			console.log("name change");
 		})
 		.catch(function (error) {
 			// An error happened.

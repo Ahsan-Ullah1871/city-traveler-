@@ -4,6 +4,7 @@ import { LoggedInUserContext } from "../../App";
 import CreateAccount from "../CreateAccount/CreateAccount";
 import Header from "../Header/Header";
 import SocialLogin from "../SocialLogin/SocialLogin";
+import "./Login.css";
 
 const Login = () => {
 	const [LoggedInUser, setLoggedInUser] = useContext(LoggedInUserContext);
@@ -17,7 +18,7 @@ const Login = () => {
 	}, [LoggedInUser]);
 
 	return (
-		<div>
+		<div className="loginPage">
 			<Header></Header>
 			<CreateAccount></CreateAccount>
 			<SocialLogin></SocialLogin>

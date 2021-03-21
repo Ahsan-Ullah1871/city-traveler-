@@ -32,7 +32,9 @@ const SocialLogin = () => {
 	};
 	return (
 		<div className="socialButton">
-			<h2>Sign In with social network</h2>
+			<div className="socialHeaderText">
+				<h2>Sign In with social network</h2>
+			</div>
 			<div className="facebook">
 				<button onClick={facebookSignInHandle}>
 					<div className=" socialRow">
