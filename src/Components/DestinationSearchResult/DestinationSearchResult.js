@@ -1,7 +1,11 @@
 import React from "react";
 import "./DestinationSearchResult.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
+import {
+	faUserFriends,
+	faSearchLocation,
+	faMapMarkerAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import {
 	VerticalTimeline,
 	VerticalTimelineElement,
@@ -10,7 +14,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const DestinationSearchResult = ({ selectedVehicle }) => {
 	const { name, categories, avatar } = selectedVehicle;
-
+	console.log(selectedVehicle);
 	return (
 		<div>
 			<div className="searchPlace">
@@ -30,8 +34,13 @@ const DestinationSearchResult = ({ selectedVehicle }) => {
 							background:
 								"rgb(33, 150, 243)",
 							color: "#fff",
+							fontSize: "30px",
 						}}
-						// icon={}
+						icon={
+							<FontAwesomeIcon
+								icon={faSearchLocation}
+							/>
+						}
 					>
 						<h3>From</h3>
 						<p>
@@ -48,8 +57,13 @@ const DestinationSearchResult = ({ selectedVehicle }) => {
 							background:
 								"rgb(33, 150, 243)",
 							color: "#fff",
+							fontSize: "35px",
 						}}
-						// icon={}
+						icon={
+							<FontAwesomeIcon
+								icon={faMapMarkerAlt}
+							/>
+						}
 					>
 						<h3 className=" ">To</h3>
 

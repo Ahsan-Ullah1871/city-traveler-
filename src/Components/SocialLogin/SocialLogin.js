@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./SocialLogin.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import {
+	currentLoggedInUserLoad,
 	initializeFramework,
 	signInWithFacebook,
 	signInWithGoogle,
@@ -11,8 +12,9 @@ import { LoggedInUserContext } from "../../App";
 import { useHistory, useLocation } from "react-router";
 
 const SocialLogin = () => {
-	const [LoggedInUser, setLoggedInUser] = useContext(LoggedInUserContext);
 	initializeFramework();
+	const [LoggedInUser, setLoggedInUser] = useContext(LoggedInUserContext);
+
 	let history = useHistory();
 	let location = useLocation();
 	let { from } = location.state || { from: { pathname: "/" } };

@@ -4,9 +4,10 @@ import "./Destination.css";
 import Header from "../Header/Header";
 import CityTravelerData from "../../CityTravelerData/CityTravelerData.json";
 import { Col, Container, Row } from "react-bootstrap";
-import { useForm } from "react-hook-form";
 import map from "../../Images/Map.png";
 import DestinationSearchResult from "../DestinationSearchResult/DestinationSearchResult";
+import MyMap from "../MyMap/MyMap";
+import SearchBox from "../SearchBox/SearchBox";
 
 const Destination = () => {
 	const { name } = useParams();
@@ -19,7 +20,6 @@ const Destination = () => {
 		setSelectedVehicle(findSelectedVehicle);
 	}, [name]);
 
-	const { register, errors, handleSubmit } = useForm();
 	const SearchClick = (data) => {
 		setShowSearchResult(true);
 		const searchResult = data;
@@ -48,41 +48,15 @@ const Destination = () => {
 								}
 							></DestinationSearchResult>
 						) : (
-							<form
-								action=""
-								className="searchForm"
-								onSubmit={handleSubmit(
+							<SearchBox
+								SearchClick={
 									SearchClick
-								)}
-							>
-								<input
-									type="text"
-									name="PickFromSearch"
-									id=""
-									ref={register({
-										required: true,
-										minLength: 2,
-									})}
-								/>{" "}
-								<br />
-								{errors.PickFromSearch &&
-									"Tis is required"}
-								<input
-									type="text"
-									name="PickToSearch"
-									id=""
-									ref={register}
-								/>
-								<input
-									type="submit"
-									name="search"
-									value="Search"
-								/>
-							</form>
+								}
+							></SearchBox>
 						)}
 					</Col>
 					<Col sm={12} md={6} className="mapPart">
-						<img src={map} alt="" />
+						<MyMap></MyMap>
 					</Col>
 				</Row>
 			</Container>

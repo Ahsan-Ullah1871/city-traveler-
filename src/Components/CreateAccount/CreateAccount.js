@@ -137,9 +137,9 @@ const CreateAccount = () => {
 							onInput={() => setError("")}
 						/>
 					)}
-					{/* error message pragraph */}
+					{/* error message output: */}
 					{error && (
-						<p className="">
+						<p className="errorMessage">
 							<FontAwesomeIcon
 								icon={
 									faExclamationTriangle
@@ -168,7 +168,7 @@ const CreateAccount = () => {
 					</p>
 				</form>
 				{LoggedInUser?.error && (
-					<p className="">
+					<p className="errorMessage">
 						<FontAwesomeIcon
 							icon={faExclamationTriangle}
 						/>

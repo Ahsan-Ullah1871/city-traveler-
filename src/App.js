@@ -5,12 +5,24 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Destination from "./Components/Destination/Destination";
 import Login from "./Components/LoginPage/Login";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
+import { initializeFramework } from "./Components/FirebaseManegment/FirebaseManegment";
+import firebase from "firebase/app";
+import "firebase/auth";
 
 export const LoggedInUserContext = createContext();
 
 function App() {
 	const [LoggedInUser, setLoggedInUser] = useState({});
-	console.log(LoggedInUser);
+	useEffect(() => {
+		initializeFramework();
+		firebase.auth().onAuthStateChanged(function (user) {
+			if (user) {
+				setLoggedInUser(user);
+			} else {
+				setLoggedInUser("");
+			}
+		});
+	}, []);
 	return (
 		<div>
 			<LoggedInUserContext.Provider
