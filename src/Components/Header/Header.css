@@ -1,3 +1,10 @@
+.logo {
+	background-color: rgba(0, 0, 0, 0.808);
+	border-radius: 350px;
+}
+.logo img {
+	height: 150px;
+}
 .navPart a,
 .navPart button {
 	text-align: center;

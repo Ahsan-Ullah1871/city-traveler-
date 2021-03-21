@@ -3,6 +3,7 @@ import { Nav, Navbar, Button } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import { LoggedInUserContext } from "../../App";
 import "./Header.css";
+import Logo from "../../Images/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -31,9 +32,9 @@ const Header = () => {
 	return (
 		<div>
 			<div>
-				<Navbar expand="lg ">
+				<Navbar expand="lg " className="headerPart">
 					<Navbar.Brand to="/home" className="logo">
-						<h2>City Traveler</h2>
+						<img src={Logo} alt="" />
 					</Navbar.Brand>
 					<Navbar.Toggle
 						aria-controls="basic-navbar-nav "
