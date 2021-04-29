@@ -8,6 +8,21 @@ export const initializeFramework = () => {
 	}
 };
 
+const updateName = async (name) => {
+	var user = firebase.auth().currentUser;
+
+	await user.updateProfile({
+		displayName: name,
+	});
+};
+
+// export const createNewAccount = async (email, password, name) => {
+// 	// create user in firebase
+// 	await firebase.auth().createUserWithEmailAndPassword(email, password);
+// 	//   update the displayName
+// 	await updateName(name);
+// };
+
 export const createNewAccount = (email, password, name) => {
 	return firebase
 		.auth()
@@ -51,20 +66,6 @@ export const signInOldUser = (email, password) => {
 			newInfo.error = errorMessage;
 			newInfo.success = false;
 			return newInfo;
-		});
-};
-
-const updateName = (name) => {
-	var user = firebase.auth().currentUser;
-
-	user.updateProfile({
-		displayName: name,
-	})
-		.then(function () {
-			// Update successful.
-		})
-		.catch(function (error) {
-			// An error happened.
 		});
 };
 

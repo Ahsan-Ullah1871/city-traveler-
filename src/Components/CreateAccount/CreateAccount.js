@@ -9,6 +9,8 @@ import {
 	signInOldUser,
 } from "../FirebaseManegment/FirebaseManegment";
 import "./CreateAccount.css";
+import firebase from "firebase/app";
+import "firebase/auth";
 
 const CreateAccount = () => {
 	const [LoggedInUser, setLoggedInUser] = useContext(LoggedInUserContext);
@@ -22,7 +24,6 @@ const CreateAccount = () => {
 	const [password, setPassword] = useState(null);
 	const [confirmPassword, setConfirmPassword] = useState(null);
 	const [error, setError] = useState("");
-	initializeFramework();
 
 	// capture user input data and store in state:
 	const getUserDataHandler = (e) => {
@@ -67,8 +68,12 @@ const CreateAccount = () => {
 			if ((newUser && name, email, password)) {
 				createNewAccount(email, password, name).then(
 					(res) => {
-						setLoggedInUser(res);
-						history.replace(from);
+						var user = firebase.auth()
+							.currentUser;
+						// const userData = { ...user, res };
+						// console.log(userData);
+						setLoggedInUser(user);
+						// history.replace(from);
 					}
 				);
 			}

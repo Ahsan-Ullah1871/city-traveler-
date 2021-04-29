@@ -16,8 +16,7 @@ const Header = () => {
 	const name = LoggedInUser?.displayName;
 	const email = LoggedInUser?.email;
 	const photo = LoggedInUser?.photoURL;
-	initializeFramework();
-
+	console.log(LoggedInUser.displayName);
 	// Profile Open: https:
 	const profileOpen = () => {
 		document.getElementById("profileCard").style.display = "block";
@@ -50,7 +49,7 @@ const Header = () => {
 							</Link>
 							<Link>Blog</Link>
 							<Link>Contact</Link>
-							{email === undefined ? (
+							{name === undefined ? (
 								<Link to="/login">
 									Log in
 								</Link>
@@ -60,7 +59,7 @@ const Header = () => {
 										profileOpen
 									}
 								>
-									Profile
+									{name}
 								</button>
 							)}
 						</Nav>
@@ -90,9 +89,7 @@ const Header = () => {
 							<div className="info">
 								<h4>
 									Name:
-									{
-										LoggedInUser?.displayName
-									}
+									{name}
 								</h4>
 								<h4>Email: {email}</h4>
 							</div>

@@ -16,13 +16,24 @@
 ## Description
 
 You can choose the vehicle of your choice for city travel !!
-Some features of my project:
-1.This site is responsive for mobile and Desktop.
-2.In home page you will see name of vehicle .  
-3.Here I am use some npm package for style.
-4.You will see a destination page.which is private page.You can't se without login.
-5.I am use simple google map in destination page.
-6.I am create login page by firebase authentication.
+Packages: <br/>
+1.Used React Framework, JavaScript
+Language, Node.JS for
+Backend, and MongoDB as database. <br/>
+2.Firebase for authentication.
+<br/>
+3.React-bootstrap for style frontend side.
+<br/>
+4.React hook form to get data from the form.
+
+  <br/>
+ Some features of my project: <br/>
+1.This site is responsive for mobile and Desktop. <br/>
+2.In home page you will see name of vehicle .   <br/>
+3.Here I am use some npm package for style. <br/>
+4.You will see a destination page.which is private page.You can't se without login. <br/>
+5.I am use simple google map in destination page. <br/>
+6.I am create login page by firebase authentication. <br/>
 
 ---
 

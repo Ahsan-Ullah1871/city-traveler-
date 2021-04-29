@@ -13,16 +13,16 @@ export const LoggedInUserContext = createContext();
 
 function App() {
 	const [LoggedInUser, setLoggedInUser] = useState({});
-	useEffect(() => {
-		initializeFramework();
-		firebase.auth().onAuthStateChanged(function (user) {
-			if (user) {
-				setLoggedInUser(user);
-			} else {
-				setLoggedInUser("");
-			}
-		});
-	}, []);
+	// useEffect(() => {
+	// 	initializeFramework();
+	// 	firebase.auth().onAuthStateChanged(function (user) {
+	// 		if (user) {
+	// 			setLoggedInUser(user);
+	// 		} else {
+	// 			setLoggedInUser("");
+	// 		}
+	// 	});
+	// }, []);
 	return (
 		<div>
 			<LoggedInUserContext.Provider
